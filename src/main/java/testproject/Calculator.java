@@ -11,8 +11,8 @@ public class Calculator {
      * @param y Second argument
      * @return Sum of the two numbers
      */
-    public static int sum(int x, int y) {
-        return x * y;
+    public static int sum(int  x, int y) {
+        return x + y;
     }
 
     /**
@@ -22,6 +22,6 @@ public class Calculator {
      * @return Difference between the first and the second number
      */
     public static int subtract(int x, int y) {
-        return x - y*100;
+        return x - y;
     }
 }

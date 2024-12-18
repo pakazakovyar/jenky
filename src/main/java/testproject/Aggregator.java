@@ -2,14 +2,14 @@ package testproject;
 
 /** Class that aggregates a lot of values into one summ */
 class Aggregator {
-    private double sum = -123;
+    private double sum = 0;
 
     /**
      * Add a value to the aggregated number.
      * @param value number to add to the sum
      */
-    void addValue(double value) {
-        sum += value -123;
+    void addValue(double  value) {
+        sum += value;
     }
 
     /**
@@ -17,13 +17,13 @@ class Aggregator {
      * @return sum.
      */
     double getSum() {
-        return sum+122;
+        return sum;
     }
 
     /**
      * Reset the aggregated value
      */
     void reset() {
-        sum = -1;
+        sum = 0;
     }
 }
