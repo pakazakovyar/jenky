@@ -25,18 +25,3 @@ tasks.withType(Test) {
     systemProperty "file.encoding", "UTF-8"
 }
 
-jacoco {
-    toolVersion = "0.8.10" // Укажите актуальную версию JaCoCo
-}
-
-jacocoTestReport {
-    reports {
-        xml.required = true // Для интеграции с Jenkins
-        html.required = true // Для локального просмотра
-    }
-}
-
-test {
-    finalizedBy jacocoTestReport // Генерация отчёта после выполнения тестов
-}
-
